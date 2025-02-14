@@ -1,6 +1,6 @@
 ## Testing the Webhook
 
-Once your server is up and running, you can use the `curl` command to send a POST request to the `/webhook` endpoint.
+Once your server is up and running:
 
 Run the curl command from zeptomail to send mail to some test mail  and make sure email tracking is enabled and zeptomail verified the subdomain
 
