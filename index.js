@@ -10,7 +10,7 @@ res.status(200).json(`Data is : ${dataArr}`)
 })
 app.post('/webhook',(req,res)=>{
 const data=req.body;
-console.log(`someone pinged the webhook and the name is : ${data.name}`);
-dataArr.push(data.name);
+console.log(`someone pinged the webhook and the name is : ${JSON.stringify(data)}`);
+dataArr.push(JSON.stringify(data));
 res.status(200).json("Webhook pinged successfully!");
 })
